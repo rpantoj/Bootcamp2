@@ -66,7 +66,7 @@ var retrieveAllListings = function() {
     Listing.find(function(err, doc) {
         if (err)
             return err;
-        console.log(doc);
+        console.log(JSON.stringify(doc, null, 1));
     });
 };
 
